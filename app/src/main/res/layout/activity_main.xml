@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff0ff"
+    >
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/h_scrollview"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/a"
+                android:id="@+id/alphabet_a"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/b"
+                android:id="@+id/alphabet_b"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/c"
+                android:id="@+id/alphabet_c"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/d"
+                android:id="@+id/alphabet_d"/>
+
+            <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/alphabet_e"
+                android:background="@drawable/e"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/help"
+        android:background="@drawable/ic_nav_help"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/back"
+        android:background="@drawable/ic_close"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="130dp"
+        android:layout_above="@id/h_scrollview"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/imageView"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:text="WAKTU :"
+        android:id="@+id/time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:id="@+id/waktu"
+        android:layout_marginBottom="0dp"
+        android:layout_below="@id/time"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_above="@+id/imageView"
+        android:id="@+id/benar"/>
+
+</RelativeLayout>
